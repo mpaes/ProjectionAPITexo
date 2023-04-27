@@ -31,7 +31,7 @@ namespace ProjetcAPITexo
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProjetcAPITexo", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProjectionAPITexo", Version = "v1" });
             });
             services.AddScoped<IFileBusiness, CSVBusiness>();
         }
@@ -43,7 +43,7 @@ namespace ProjetcAPITexo
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProjetcAPITexo v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProjectionAPITexo v1"));
             }
 
             app.UseHttpsRedirection();
