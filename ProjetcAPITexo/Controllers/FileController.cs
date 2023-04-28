@@ -18,7 +18,7 @@ namespace ProjetcAPITexo.Controllers
         }
 
         [HttpPost("Readfilecsv")]
-        public async Task<IActionResult> Readfilecsv([FromForm] IFormFileCollection file)
+        public IActionResult Readfilecsv([FromForm] IFormFileCollection file)
         {
             try
             {
